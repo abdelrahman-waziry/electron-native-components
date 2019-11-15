@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/abdelrahman-waziry/native-electron-components#readme",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.12.0"
   }
 }

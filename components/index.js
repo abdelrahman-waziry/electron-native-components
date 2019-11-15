@@ -24,4 +24,4 @@ function getOS() {
     return os;
 }
 
-export { defualt as Button } from `./button/${getOS().replace(/ /g, '').toLowerCase()}`
+export { defualt as Button } from `./button`
