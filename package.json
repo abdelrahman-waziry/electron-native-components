@@ -1,6 +1,6 @@
 {
   "name": "native-electron-components",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A native components directory for electronjs",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,12 @@
     "components"
   ],
   "author": "Abdelrahman Waziry",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/abdelrahman-waziry/native-electron-components/issues"
   },
-  "homepage": "https://github.com/abdelrahman-waziry/native-electron-components#readme"
+  "homepage": "https://github.com/abdelrahman-waziry/native-electron-components#readme",
+  "dependencies": {
+    "react": "^16.12.0"
+  }
 }
