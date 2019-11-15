@@ -2,7 +2,7 @@
   "name": "native-electron-components",
   "version": "0.0.3",
   "description": "A native components directory for electronjs",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "npm test"
   },
@@ -23,6 +23,16 @@
   "homepage": "https://github.com/abdelrahman-waziry/native-electron-components#readme",
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "webpack": "^4.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack-cli": "^3.0.4"
   }
 }
