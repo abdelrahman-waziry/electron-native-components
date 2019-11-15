@@ -29,3 +29,7 @@ export interface ButtonProps {
      */
     onRightClick?: Function
 }
+
+export class Button extends React.Component<ButtonProps, {}> { }
+
+export default Button;
