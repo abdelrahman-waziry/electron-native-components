@@ -1,0 +1,24 @@
+{
+  "name": "native-electron-components",
+  "version": "1.0.0",
+  "description": "A native components directory for electronjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdelrahman-waziry/native-electron-components.git"
+  },
+  "keywords": [
+    "native",
+    "desktop",
+    "components"
+  ],
+  "author": "Abdelrahman Waziry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdelrahman-waziry/native-electron-components/issues"
+  },
+  "homepage": "https://github.com/abdelrahman-waziry/native-electron-components#readme"
+}
