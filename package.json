@@ -6,7 +6,9 @@
   "scripts": {
     "test": "npm test",
     "start": "webpack --watch",
-    "build": "webpack"
+    "prebuild": "npm version patch",
+    "build": "webpack",
+    "postbuild": "npm publish"
   },
   "repository": {
     "type": "git",
