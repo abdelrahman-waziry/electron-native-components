@@ -1,6 +1,7 @@
 import * as React from 'react'
+import NativeComponents from "../index"
 
-export interface ButtonProps {
+export interface ButtonProps extends NativeComponents.Props {
     /**
      * Passs a react node to the button as children
      * @default false 
@@ -18,16 +19,6 @@ export interface ButtonProps {
      * @default false
      */
     disabled?: boolean
-
-    /**
-     * handles onClick event
-     */
-    onClick?: Function
-
-    /**
-     * handles context menu click
-     */
-    onRightClick?: Function
 }
 
 export class Button extends React.Component<ButtonProps, {}> { }

@@ -1,5 +1,5 @@
 {
-  "name": "native-electron-components",
+  "name": "electron-native-components",
   "version": "0.0.7",
   "description": "A native components directory for electronjs",
   "main": "build/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abdelrahman-waziry/native-electron-components.git"
+    "url": "git+https://github.com/abdelrahman-waziry/electron-native-components.git"
   },
   "keywords": [
     "native",
@@ -22,9 +22,9 @@
   "author": "Abdelrahman Waziry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abdelrahman-waziry/native-electron-components/issues"
+    "url": "https://github.com/abdelrahman-waziry/electron-native-components/issues"
   },
-  "homepage": "https://github.com/abdelrahman-waziry/native-electron-components#readme",
+  "homepage": "https://github.com/abdelrahman-waziry/electron-native-components#readme",
   "dependencies": {
     "@types/react": "^16.9.11",
     "prop-types": "^15.7.2",
