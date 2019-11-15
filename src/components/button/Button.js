@@ -8,8 +8,8 @@ class Button extends React.Component {
             <div>
                 <button
                     className={this.props.className}
-                    onClick={this.props.onClick()}
-                    onContextMenu={this.props.onRightClick()}
+                    onClick={() => {this.props.onClick()}}
+                    onContextMenu={() => {this.props.onRightClick()}}
                     disabled={this.props.disabled}
                 >
                     {this.props.children}
@@ -21,7 +21,7 @@ class Button extends React.Component {
 
 export default Button
 
-Button.PropTypes = {
+Button.propTypes = {
     className: PropTypes.string,
     children: PropTypes.isRequired,
     onClick: PropTypes.func,
