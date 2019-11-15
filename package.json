@@ -4,7 +4,9 @@
   "description": "A native components directory for electronjs",
   "main": "build/index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
