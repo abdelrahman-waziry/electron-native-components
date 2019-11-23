@@ -1,6 +1,6 @@
 {
   "name": "electron-native-components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A native components directory for electronjs",
   "main": "build/index.js",
   "scripts": {
