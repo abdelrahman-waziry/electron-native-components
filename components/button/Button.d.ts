@@ -2,6 +2,7 @@ import * as React from 'react'
 import NativeComponents from "../index"
 
 export interface ButtonProps extends NativeComponents.Props {
+    
     /**
      * Passs a react node to the button as children
      * @default false 
@@ -19,6 +20,17 @@ export interface ButtonProps extends NativeComponents.Props {
      * @default false
      */
     disabled?: boolean
+
+    /**
+     * Determines button type
+     * @default 'default'
+     */
+    type?: 'default' | 'icon'
+    /**
+     * Determines button mode
+     * @default 'dark'
+     */
+    mode?: 'dark' | 'light'
 }
 
 export class Button extends React.Component<ButtonProps, {}> { }

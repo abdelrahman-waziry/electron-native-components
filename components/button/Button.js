@@ -1,32 +1,39 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import { getOS } from '../_utils/helpers';
+import DefaultWindowsButton from './Default.Windows';
+import DefaultMacOSButton from './Default.MacOS';
 
 class Button extends React.Component {
+    constructor(props){
+        super(props)
+        this._renderButton = this._renderButton.bind(this)
+    }
+
+    /**
+     * Renders Button based on given type
+     */
+    _renderButton({type, ...rest}) {
+        switch (type) {
+            case 'default':
+                return (
+                    getOS() === 'Windows' ? 
+                    <DefaultWindowsButton {...rest}/>
+                    : <DefaultMacOSButton/>
+                )
+                break;
+            default:
+                break;
+        }
+    }
 
     render(){
+
         return(
             <div>
-                <button
-                    className={this.props.className}
-                    onClick={this.props.onClick}
-                    onContextMenu={this.props.onContextMenu}
-                    disabled={this.props.disabled}
-                    style={this.props.style}
-                >
-                    {this.props.children}
-                </button>
+                {this._renderButton(this.props)}
             </div>
         )
     }
 }
 
 export default Button
-
-Button.propTypes = {
-    className: PropTypes.string,
-    children: PropTypes.element.isRequired,
-    onClick: PropTypes.func,
-    onContextMenu: PropTypes.func,
-    disabled: PropTypes.bool,
-    style: PropTypes.object
-}
