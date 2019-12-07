@@ -26,6 +26,11 @@ export interface ButtonProps extends NativeComponents.Props {
      * @default 'default'
      */
     type?: 'default' | 'icon'
+    /**
+     * Determines button mode
+     * @default 'dark'
+     */
+    mode?: 'dark' | 'light'
 }
 
 export class Button extends React.Component<ButtonProps, {}> { }
