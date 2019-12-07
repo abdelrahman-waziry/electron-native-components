@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './style.css'
 
 class DefaultWindowsButton extends React.Component {
     constructor(props){
@@ -8,9 +9,9 @@ class DefaultWindowsButton extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className='windows'>
                 <button
-                    className={this.props.className}
+                    className={`rest ${this.props.mode} ${this.props.className}`}
                     onClick={this.props.onClick}
                     onContextMenu={this.props.onContextMenu}
                     disabled={this.props.disabled}

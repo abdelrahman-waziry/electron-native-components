@@ -1,0 +1,32 @@
+.windows .rest.light {
+    width: 120px;
+    height: 30px;
+    background: #B5B5B5;
+    color: #000000;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.windows .rest.light:hover {
+    border: 2px solid rgba(0, 0, 0, 0.4);   
+    box-sizing: border-box;
+}
+
+.windows .rest.light:active {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+
+.windows .rest.dark:focus {
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.windows .rest.light:focus {
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+}
